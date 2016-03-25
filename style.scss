@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600);
+@import url(fonts/fonts.css);
+
+$highlight-color: #EB7500;
+$container-large: 1600px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: black;
+}
+
+nav {
+  width: 100%;
+  margin: 30px 0 0px 0;
+
+  ul {
+    margin: 0 auto;
+    font-size: .9rem;
+    font-weight: 300;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    max-width: 1200px;
+
+    li a {
+
+      padding: 4px 14px;
+      text-decoration: none;
+      color: white;
+
+      &.book {
+        background: $highlight-color;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  &.bigbox {
+    background: url(poster.jpg) no-repeat center -170px;
+    background-size: cover;
+    height: 60vh;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &.fullheight {
+      height: 100vh;
+
+      header {
+        padding-top: 35vh;
+      }
+    }
+  }
+
+  header {
+    width: 100%;
+
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 40vw;
+
+    h1 {
+      text-shadow: 0px 0px 23px rgba(0, 0, 0, .5);
+      font-family: 'ledlightregular', sans-serif;
+      margin-bottom: -20px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      text-shadow: 0px 0px 23px rgba(0, 0, 0, .5);
+    }
+  }
+}
