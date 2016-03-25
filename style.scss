@@ -5,10 +5,12 @@ $highlight-color: #EB7500;
 $link-color: white;
 
 $container-large: 1600px;
+$container-small: 414px; /* iPhone 6 Plus */
 
 $header-float-proportion: 0.35;
 
 $break-large: "only screen and (min-width: #{$container-large})";
+$break-small: "only screen and (max-width: #{$container-small})";
 
 * {
   margin: 0;
@@ -24,6 +26,13 @@ nav {
   width: 100%;
   margin-top: 30px;
 
+  @media #{$break-small} {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+  }
+
   ul {
     margin: 0 auto;
     font-size: .9rem;
@@ -35,14 +44,33 @@ nav {
     letter-spacing: 1px;
     max-width: 1200px;
 
+    @media #{$break-small} {
+      justify-content: space-between;;
+    }
+
+    li {
+      text-align: left;
+    }
+
     li a {
 
-      padding: 4px 14px;
+      padding: 4px 0px;
       text-decoration: none;
       color: $link-color;
 
       &.book {
         border-radius: 10px;
+        padding: 4px 10px;
+      }
+
+      @media #{$break-small} {
+        &.blog {
+          span { display: none; }
+
+          &:after {
+            content: "Blog";
+          }
+        }
       }
     }
   }
@@ -56,9 +84,13 @@ nav {
   border-radius: 10px;
 
   &.big {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: 10px 40px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, .5);
+
+    @media #{$break-small} {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -79,6 +111,10 @@ section {
 
         @media #{$break-large} {
           padding-top: $header-float-proportion * $container-large;
+        }
+
+        @media #{$break-small} {
+          padding-top: 30vh;
         }
       }
     }
@@ -101,6 +137,17 @@ section {
     h2 {
       font-size: 1.5rem;
       text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    }
+
+    @media #{$break-small} {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   }
 }

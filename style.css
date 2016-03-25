@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600);
 @import url(fonts/fonts.css);
+/* iPhone 6 Plus */
 * {
   margin: 0;
   padding: 0; }
@@ -11,6 +12,12 @@ body {
 nav {
   width: 100%;
   margin-top: 30px; }
+  @media only screen and (max-width: 414px) {
+    nav {
+      width: 95vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5vw; } }
   nav ul {
     margin: 0 auto;
     font-size: .9rem;
@@ -21,12 +28,23 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     max-width: 1200px; }
+    @media only screen and (max-width: 414px) {
+      nav ul {
+        justify-content: space-between; } }
+    nav ul li {
+      text-align: left; }
     nav ul li a {
-      padding: 4px 14px;
+      padding: 4px 0px;
       text-decoration: none;
       color: white; }
       nav ul li a.book {
-        border-radius: 10px; }
+        border-radius: 10px;
+        padding: 4px 10px; }
+      @media only screen and (max-width: 414px) {
+        nav ul li a.blog span {
+          display: none; }
+        nav ul li a.blog:after {
+          content: "Blog"; } }
 
 .book {
   color: white;
@@ -35,9 +53,12 @@ nav {
   text-transform: uppercase;
   border-radius: 10px; }
   .book.big {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: 10px 40px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 414px) {
+      .book.big {
+        font-size: 1rem; } }
 
 section {
   width: 100%; }
@@ -54,6 +75,9 @@ section {
         @media only screen and (min-width: 1600px) {
           section.bigbox.fullheight header {
             padding-top: 560px; } }
+        @media only screen and (max-width: 414px) {
+          section.bigbox.fullheight header {
+            padding-top: 30vh; } }
   section header {
     width: 100%;
     color: white;
@@ -67,3 +91,9 @@ section {
     section header h2 {
       font-size: 1.5rem;
       text-shadow: 0px 0px 15px black; }
+    @media only screen and (max-width: 414px) {
+      section header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0; }
+      section header h2 {
+        font-size: 1.2rem; } }
