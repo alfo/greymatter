@@ -28,9 +28,6 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1px;
     max-width: 1200px; }
-    @media only screen and (max-width: 414px) {
-      nav ul {
-        justify-content: space-between; } }
     nav ul li {
       text-align: left; }
     nav ul li a {
@@ -59,6 +56,9 @@ nav {
     @media only screen and (max-width: 414px) {
       .book.big {
         font-size: 1rem; } }
+    @media only screen and (max-width: 750px) and (orientation: landscape) {
+      .book.big {
+        font-size: 0.8rem; } }
 
 section {
   width: 100%; }
@@ -78,6 +78,23 @@ section {
         @media only screen and (max-width: 414px) {
           section.bigbox.fullheight header {
             padding-top: 30vh; } }
+      @media only screen and (max-width: 750px) and (orientation: landscape) {
+        section.bigbox.fullheight {
+          height: 100vh;
+          background: url(poster.jpg) no-repeat center -20vw;
+          background-size: cover; }
+          section.bigbox.fullheight header {
+            padding-top: 50vh;
+            font-size: 2.6rem; }
+            section.bigbox.fullheight header h2 {
+              font-size: 1.2rem;
+              margin-top: 8px;
+              margin-bottom: -12px; } }
+      @media only screen and (max-width: 650px) and (orientation: landscape) {
+        section.bigbox.fullheight h1 {
+          margin-bottom: -25px; }
+        section.bigbox.fullheight h2 {
+          display: none; } }
   section header {
     width: 100%;
     color: white;
