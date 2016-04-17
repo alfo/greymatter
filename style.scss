@@ -5,7 +5,7 @@ $highlight-color: #EB7500;
 $link-color: white;
 
 $container-large: 1200px;
-$container-small: 414px; /* iPhone 6 Plus */
+$container-small: 415px; /* iPhone 6 Plus */
 
 $header-float-proportion: 0.45;
 
@@ -17,6 +17,7 @@ $mobile-landscape-small: "only screen and (max-width: 650px) and (orientation: l
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
 nav {
   width: 100%;
   margin-top: 30px;
+  position: absolute;
 
   @media #{$break-small} {
     width: 95vw;
@@ -36,8 +38,6 @@ nav {
     margin-right: auto;
     margin-top: 5vw;
   }
-
-
 
   ul {
     margin: 0 auto;
@@ -52,6 +52,16 @@ nav {
 
     li {
       text-align: left;
+
+      &.title {
+        font-family: 'ledlightregular', sans-serif;
+        font-size: 1rem;
+        line-height: 24px;
+
+        @media #{$break-small} {
+          order: -1;
+        }
+      }
     }
 
     li a {
@@ -103,7 +113,33 @@ nav {
 .container {
   margin: 0 auto;
   max-width: $container-large;
-  padding: 20px;
+  background: rgb(30, 30, 30);
+  display: flex;
+  justify-content: space-between;
+  color: #eee;
+
+  .box {
+    padding: 40px;
+
+    &.map {
+      width: 700px;
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+  h1, h2, p {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #bbb;
+  }
 }
 
 section {

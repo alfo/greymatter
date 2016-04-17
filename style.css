@@ -3,7 +3,8 @@
 /* iPhone 6 Plus */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -13,8 +14,9 @@ body {
 
 nav {
   width: 100%;
-  margin-top: 30px; }
-  @media only screen and (max-width: 414px) {
+  margin-top: 30px;
+  position: absolute; }
+  @media only screen and (max-width: 415px) {
     nav {
       width: 95vw;
       margin-left: auto;
@@ -32,6 +34,13 @@ nav {
     max-width: 1200px; }
     nav ul li {
       text-align: left; }
+      nav ul li.title {
+        font-family: 'ledlightregular', sans-serif;
+        font-size: 1rem;
+        line-height: 24px; }
+        @media only screen and (max-width: 415px) {
+          nav ul li.title {
+            order: -1; } }
     nav ul li a {
       padding: 4px 0px;
       text-decoration: none;
@@ -39,7 +48,7 @@ nav {
       nav ul li a.book {
         border-radius: 10px;
         padding: 4px 10px; }
-      @media only screen and (max-width: 414px) {
+      @media only screen and (max-width: 415px) {
         nav ul li a.blog span {
           display: none; }
         nav ul li a.blog:after {
@@ -55,7 +64,7 @@ nav {
     font-size: 1.3rem;
     padding: 10px 40px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 415px) {
       .book.big {
         font-size: 1rem; } }
     @media only screen and (max-width: 750px) and (orientation: landscape) {
@@ -65,7 +74,22 @@ nav {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 20px; }
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  color: #eee; }
+  .container .box {
+    padding: 40px; }
+    .container .box.map {
+      width: 700px; }
+      .container .box.map iframe {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px; }
+  .container h1, .container h2, .container p {
+    margin-bottom: 20px; }
+  .container a {
+    color: #bbb; }
 
 section {
   width: 100%; }
@@ -82,7 +106,7 @@ section {
         @media only screen and (min-width: 1200px) {
           section.bigbox.fullheight header {
             padding-top: 540px; } }
-        @media only screen and (max-width: 414px) {
+        @media only screen and (max-width: 415px) {
           section.bigbox.fullheight header {
             padding-top: 30vh; } }
       @media only screen and (max-width: 750px) and (orientation: landscape) {
@@ -115,7 +139,7 @@ section {
     section header h2 {
       font-size: 1.5rem;
       text-shadow: 0px 0px 15px black; }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 415px) {
       section header h1 {
         font-size: 2.5rem;
         margin-bottom: 0; }
