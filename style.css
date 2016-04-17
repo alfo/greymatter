@@ -75,17 +75,22 @@ nav {
   margin: 0 auto;
   max-width: 1200px;
   background: #1e1e1e;
-  display: flex;
-  justify-content: space-between;
-  color: #eee; }
+  color: #eee;
+  display: flex; }
   .container .box {
     padding: 40px; }
-    .container .box.map {
-      width: 700px; }
-      .container .box.map iframe {
-        width: 100%;
-        height: 300px;
-        margin-top: 20px; }
+  .container aside.map {
+    width: 700px; }
+    .container aside.map iframe {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px; }
+  @media only screen and (max-width: 415px) {
+    .container {
+      flex-flow: column; }
+      .container aside.map {
+        width: inherit;
+        border-top: 3px solid #333; } }
   .container h1, .container h2, .container p {
     margin-bottom: 20px; }
   .container a {
@@ -145,3 +150,10 @@ section {
         margin-bottom: 0; }
       section header h2 {
         font-size: 1.2rem; } }
+
+footer.container {
+  background: black; }
+  footer.container p {
+    text-align: center;
+    width: 100%;
+    margin: 40px auto; }

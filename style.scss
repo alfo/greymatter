@@ -114,12 +114,14 @@ nav {
   margin: 0 auto;
   max-width: $container-large;
   background: rgb(30, 30, 30);
-  display: flex;
-  justify-content: space-between;
   color: #eee;
+  display: flex;
 
   .box {
     padding: 40px;
+  }
+
+  aside {
 
     &.map {
       width: 700px;
@@ -130,7 +132,14 @@ nav {
         margin-top: 20px;
       }
     }
+  }
 
+  @media #{$break-small} {
+    flex-flow: column;
+    aside.map {
+      width: inherit;
+      border-top: 3px solid #333;
+    }
   }
 
   h1, h2, p {
@@ -140,6 +149,7 @@ nav {
   a {
     color: #bbb;
   }
+
 }
 
 section {
@@ -221,5 +231,15 @@ section {
         font-size: 1.2rem;
       }
     }
+  }
+}
+
+footer.container {
+  background: black;
+
+  p {
+    text-align: center;
+    width: 100%;
+    margin: 40px auto;
   }
 }
