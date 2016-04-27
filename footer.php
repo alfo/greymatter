@@ -22,7 +22,7 @@
         </script>
         <a href="https://twitter.com/greymatterplay"><img src="images/twitter.svg"></a>
         <a href="https://facebook.com/greymatterplay"><img src="images/facebook.svg"></a>
-        <a href="https://instragram.com/greymatterplay"><img src="images/instagram.svg"></a>
+        <a href="https://instagram.com/greymatterplay"><img src="images/instagram.svg"></a>
         <a href="http://diary.greymatterplay.com"><img src="images/tumblr.svg"></a>
       </div>
       <p>&copy; Spasm 2016. Designed by <a href="https://alexforey.com">Alex Forey</a></p>

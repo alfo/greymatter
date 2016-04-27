@@ -82,12 +82,27 @@ nav {
       .book.big {
         font-size: 0.8rem; } }
 
+.ratings {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  @media only screen and (max-width: 415px) {
+    .ratings {
+      flex-direction: column; } }
+  .ratings .rating {
+    text-align: center; }
+    .ratings .rating span {
+      font-size: 24px; }
+    .ratings .rating p {
+      font-style: italic; }
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
   background: #1e1e1e;
-  color: #eee;
-  display: flex; }
+  color: #eee; }
+  .container.flex {
+    display: flex; }
   .container .box {
     padding: 40px; }
     .container .box img {
@@ -124,7 +139,8 @@ nav {
     margin-bottom: 20px; }
   .container h1 {
     font-size: 35px;
-    margin-bottom: 10px; }
+    text-align: center;
+    margin-bottom: 40px; }
   .container p.dates {
     margin-bottom: 5px;
     font-weight: 400; }
@@ -133,6 +149,32 @@ nav {
     .container a.tickets {
       color: #eb7500;
       text-decoration: none; }
+
+.container article {
+  width: 100%;
+  border-bottom: 3px solid #444;
+  margin-bottom: 20px;
+  width: 100%; }
+  .container article:last-child {
+    border-bottom: 0; }
+  .container article .info time {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #aaa; }
+    .container article .info time a {
+      text-decoration: none; }
+  .container article p {
+    margin-top: 10px; }
+  .container article.photo img {
+    width: 50%;
+    float: left;
+    max-width: none;
+    margin-top: 0; }
+  .container article.photoset .set {
+    overflow-x: scroll; }
+    .container article.photoset .set img {
+      display: inline;
+      float: none; }
 
 section {
   width: 100%; }

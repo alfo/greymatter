@@ -1,0 +1,273 @@
+{block:Posts}
+  {block:Text}
+    <a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a>
+    {block:Title}
+      <h3><a href="{Permalink}">{Title}</a></h3>
+    {/block:Title}
+    {Body}
+  {/block:Text}
+
+  {block:Photo}
+                    <article id="{PostID}" class="post photo">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <figure>
+                            {LinkOpenTag}
+                                <img src="{PhotoURL-1280}" alt="{PhotoAlt}"/>
+                            {LinkCloseTag}
+                        </figure>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </article>
+                {/block:Photo}{block:Panorama}
+                    <article id="{PostID}" class="post panorama">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <figure>
+                            {LinkOpenTag}
+                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                            {LinkCloseTag}
+                        </figure>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </article>
+                {/block:Panorama}{block:Photoset}
+                    <article id="{PostID}" class="post photoset">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <figure class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                            {block:Photos}
+                                <div class="photo-data">
+                                    <div class="pxu-photo">
+                                        <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"><img alt="{PhotoAlt}" src="{PhotoURL-1280}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></a>
+                                    </div>
+                                </div>
+                            {/block:Photos}
+                        </figure>
+                        {block:Caption}
+                        <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </article>
+                {/block:Photoset}{block:Quote}
+                    <article id="{PostID}" class="post quote">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <h3>{Quote}</h3>
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </article>
+                {/block:Quote}{block:Link}
+                    <article id="{PostID}" class="post link">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <h3><a href="{URL}" class="link" {Target}>{Name}</a></h3>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </article>
+                {/block:Link}{block:Chat}
+                    <article id="{PostID}" class="post chat">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}{Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </article>
+                {/block:Chat}{block:Video}
+                    <article id="{PostID}" class="post video">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <figure>
+                            {Video-500}
+                        </figure>
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </article>
+                {/block:Video}{block:Audio}
+                    <article id="{PostID}" class="post audio">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <figure>
+                            {AudioPlayerWhite}
+                        </figure>
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </article>
+                {/block:Audio}{block:Answer}
+                    <article id="{PostID}" class="post answer">
+                    <div class="post-date"><a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}<br>{Year}</a></div>
+                        <h3><a href="{Permalink}">{Question}</a></h3>
+
+                        <div class="response"><strong class="label">Answer: </strong>{Answer}</div>
+                    </article>
+                {/block:Answer}
+                <footer class="clearfix">
+                    {block:HasTags}<ul class="tags clearfix">
+                        {block:Tags}<li class="tag"><a href="{TagURL}">{Tag}</a></li>{/block:Tags}
+                    </ul>{/block:HasTags}
+                    <ul class="info clearfix">
+                        <li class="date"><a href="{Permalink}">{Month} {DayOfMonthWithZero}, {Year}</a></li>
+                        {block:ContentSource}<li><a href="{SourceURL}">{lang:Source}: {block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}{block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}</a></li>{/block:ContentSource}
+                    </ul>
+                </footer>
+                {/block:Posts}
+        </section>
+
+        {block:PermalinkPagination}{block:IfDisqusShortname}<!-----DISQUS COMMENTS----->
+        <section id="disqus" class="clearfix">
+            <h4>Recent comments</h4>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+            <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+        </section>
+        <!-----END DISQUS COMMENTS----->{/block:IfDisqusShortname}{/block:PermalinkPagination}
+        {block:PermalinkPage}{block:PostNotes}<!-----POST NOTES----->
+        <section id="notes" class="clearfix">
+            {PostNotes}
+        </section>
+        <!-----END POST NOTES----->{/block:PostNotes}{/block:PermalinkPage}
+
+        {block:IndexPage}{block:Pagination}<!-----PAGE NAVIGATION----->
+        <nav class="navigation clearfix">
+            {block:NextPage}
+                <a href="{NextPage}" class="nav-next">Older Posts</a>
+            {/block:NextPage}
+
+            {block:PreviousPage}
+                <a href="{PreviousPage}" class="nav-previous">Newer Posts</a>
+            {/block:PreviousPage}
+        </nav>
+        <!-----PAGE NAVIGATION----->{/block:Pagination}{/block:IndexPage}
+        {block:PermalinkPage}{block:PermalinkPagination}<!-----PERMALINK NAVIGATION----->
+        <nav class="navigation clearfix">
+            {block:PreviousPost}
+                <a href="{PreviousPost}" class="nav-previous permalink-nav-previous">Older Post</a>
+            {/block:PreviousPost}
+
+            {block:NextPost}
+                <a href="{NextPost}" class="nav-next permalink-nav-next">Newer Post</a>
+            {/block:NextPost}
+        </nav>
+        <!-----PERMALINK NAVIGATION----->{/block:PermalinkPagination}{/block:PermalinkPage}
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://static.tumblr.com/ypi9dez/NF5mye0bi/jquery.easing.1.3.min.js"></script>
+        <!-----PHOTOSET----->
+        <script src="http://static.tumblr.com/ypi9dez/yPqml8j24/imagesloaded.min.js"></script>
+        <script src="http://static.tumblr.com/ypi9dez/Fdfmneyei/pxuphotoset.min.js"></script>
+        <script>
+            $('.photo-slideshow').pxuPhotoset({
+                'ligthbox'  : true,
+                'highRes'   : true,
+                'rounded'   : 'corners',
+                'exif'      : false,
+                'captions'  : false,
+                'gutter'    : '15px',
+                'photoset'  : '.photo-slideshow',
+                'photoWrap' : '.photo-data',
+                'photo'     : '.pxu-photo'
+            }, function() {
+                $(this).animate({opacity:1});
+            });
+        </script>
+         <!-----MENU----->
+        <script>
+            $('#menu-button').click(function(){
+                $('#menu').toggleClass('fullscreen');
+                $('body').toggleClass('noscroll');
+                $('.menu-title').addClass('show');
+                $('.nav-button hr').toggleClass('hide');
+                $('.nav-button .close').toggleClass('show');
+            });
+        </script>
+        <!-----SCROLL----->
+        {block:IndexPage}<script>
+            $(document).scroll(function () {
+                var y = $(this).scrollTop();
+                if (y > 300) {
+                    $('.menu-title').addClass('show');
+                } else {
+                    $('.menu-title').removeClass('show');
+                }
+            });
+        </script>{/block:IndexPage}
+        {block:PermalinkPage}<script>
+            $('.menu-title').addClass('show');
+        </script>{/block:PermalinkPage}
+        <!-----ARROW KEY BINDINGS----->
+        {block:IndexPage}
+        <script>
+            {block:PreviousPage}function leftArrowPressed() {window.location = '{PreviousPage}';}{/block:PreviousPage}
+            {block:NextPage}function rightArrowPressed() {window.location = '{NextPage}';}{/block:NextPage}
+            document.onkeydown = function(evt) {
+                evt = evt || window.event;
+                switch (evt.keyCode) {
+                    {block:PreviousPage}case 37:
+                        leftArrowPressed();
+                        break;{/block:PreviousPage}
+                    {block:NextPage}case 39:
+                        rightArrowPressed();
+                        break;{/block:NextPage}
+                }
+            };
+        </script>
+        {/block:IndexPage}
+        {block:PermalinkPagination}
+        <script>
+            {block:NextPost}function leftArrowPressed() {window.location = '{NextPost}';}{/block:NextPost}
+            {block:PreviousPost}function rightArrowPressed() {window.location = '{PreviousPost}';}{/block:PreviousPost}
+            document.onkeydown = function(evt) {
+                evt = evt || window.event;
+                switch (evt.keyCode) {
+                    {block:NextPost}case 37:
+                        leftArrowPressed();
+                        break;{/block:NextPost}
+                    {block:PreviousPost}case 39:
+                        rightArrowPressed();
+                        break;{/block:PreviousPost}
+                }
+            };
+        </script>
+        {/block:PermalinkPagination}
+        <!-----RESPONSIVE VIDEO----->
+        <script src="http://static.tumblr.com/ypi9dez/JNamp6ag6/fluidvids.min.js"></script>
+        <!-----DISQUS SCRIPT----->
+        {block:IfDisqusShortname}
+        <script>
+            (function() {
+                var links = document.getElementsByTagName('a');
+                var query = '?';
+                for(var i = 0; i < links.length; i++) {
+                    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                    }
+                }
+                document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+            })();
+        </script>
+        {/block:IfDisqusShortname}
+        <!-----GOOGLE ANALYTICS----->
+        {block:IfGoogleAnalyticsID}
+            <script>
+                var _gaq=[["_setAccount","{text:Google Analytics ID}"],["_trackPageview"]];
+                (function(d,t){
+                    var g=d.createElement(t), s=d.getElementsByTagName(t)[0];
+                    g.async=1;
+                    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+                    s.parentNode.insertBefore(g,s)
+                }(document,"script"));
+            </script>
+        {/block:IfGoogleAnalyticsID}
+    </body>
+</html>

@@ -6,7 +6,7 @@
       <div class="container">
 
         <div class="box">
-          <h1>Development</h1>
+          <h1>Origins</h1>
 
           <p>Some nice blurb about the play. There will be plenty of words here to make sure that it fills out the container. It will be really interesting to the audience.</p>
           <p>Here's another short paragraph. This one has <a href="team">a link</a> in it.</p>
@@ -17,8 +17,11 @@
 
           <h2>Some small background</h2>
           <p>Here's some more text about things that you should read about. It's super interesting and you should read it.</p>
+
+          <div style="clear: both"></div>
         </div>
 
       </div>
+
     </section>
 <?php include 'footer.php'; ?>
