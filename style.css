@@ -43,13 +43,15 @@ nav {
       nav ul li.title {
         font-family: 'ledlightregular', sans-serif;
         font-size: 1rem;
-        line-height: 24px; }
+        line-height: 20px;
+        font-size: 22px; }
         @media only screen and (max-width: 415px) {
           nav ul li.title {
             order: -1;
             width: 100%;
             margin-bottom: 5px;
-            text-align: center; } }
+            text-align: center;
+            font-size: inherit; } }
     nav ul li a {
       padding: 4px 0px;
       text-decoration: none;
@@ -88,6 +90,21 @@ nav {
   display: flex; }
   .container .box {
     padding: 40px; }
+    .container .box img {
+      width: 50%;
+      max-width: 400px;
+      margin: 20px; }
+      .container .box img.left {
+        float: left;
+        margin-left: 0; }
+      .container .box img.right {
+        float: right;
+        margin-right: 0; }
+      @media only screen and (max-width: 415px) {
+        .container .box img {
+          width: 100%;
+          float: none;
+          margin: 20px 0 20px 0; } }
   .container aside {
     order: 2; }
     .container aside.map {
@@ -105,6 +122,9 @@ nav {
         border-bottom: 3px solid #444; } }
   .container h1, .container h2, .container p {
     margin-bottom: 20px; }
+  .container h1 {
+    font-size: 35px;
+    margin-bottom: 10px; }
   .container p.dates {
     margin-bottom: 5px;
     font-weight: 400; }
