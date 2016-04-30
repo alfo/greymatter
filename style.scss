@@ -406,9 +406,24 @@ footer.container {
   }
 }
 
-#bigmap { display: none; }
+/* Tumblr Stuff */
+.container article .set {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  img {
+    float: left;
+    width: 500px;
+    max-width: none;
+    text-align: center;
+  }
+}
 
 /* Shitty way to deal with maps and not understanding flexbox */
+#bigmap { display: none; }
+
 @media #{$break-small} {
   #sidemap {
     display: none;
