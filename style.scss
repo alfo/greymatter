@@ -19,6 +19,7 @@ $mobile-landscape-small: "only screen and (max-width: 650px) and (orientation: l
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
@@ -62,7 +63,7 @@ nav {
       }
 
       &.title {
-        font-family: 'ledlightregular', sans-serif;
+        font-family: 'led', sans-serif;
         font-size: 1rem;
         line-height: 20px;
         font-size: 22px;
@@ -341,7 +342,7 @@ section {
 
     h1 {
       text-shadow: 0px 0px 25px rgba(0, 0, 0, .5);
-      font-family: 'ledlightregular', sans-serif;
+      font-family: 'led', sans-serif;
       margin-bottom: -20px;
     }
 
