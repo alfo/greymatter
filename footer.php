@@ -25,10 +25,18 @@
         <a href="https://instagram.com/greymatterplay"><img src="images/instagram.svg"></a>
         <a href="http://diary.greymatterplay.com"><img src="images/tumblr.svg"></a>
       </div>
-      <p>&copy; Spasm 2016. Designed by <a href="https://alexforey.com">Alex Forey</a></p>
+      <p>&copy; SPASM 2016. Designed by <a href="https://alexforey.com">Alex Forey</a></p>
     </footer>
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="scripts/jquery.fitvids.js"></script>
+      <script>
+        // Basic FitVids Test
+        $(".container").fitVids();
+      </script>
+
   </body>
 
 </html>
