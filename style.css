@@ -116,6 +116,11 @@ nav#greymatter {
       .container .box img.right {
         float: right;
         margin-right: 0; }
+      .container .box img.full-width {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px; }
       @media only screen and (max-width: 415px) {
         .container .box img {
           width: 100%;
