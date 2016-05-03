@@ -2,21 +2,29 @@
     <footer class="container">
       <div class="contact">
         <script type="text/javascript">
-        //<![CDATA[
-        <!--
-        var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-        "=73){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-        ".substr(0,ol);}f(\")49,\\\"hbjymp,cwtk420\\\\ 06j1'54VII320\\\\H_^YZ_230\\\\"+
-        "Y\\\\\\\\Q730\\\\INB]^N^]IJ_@VDr\\\\610\\\\230\\\\ojit9E*vab/jf`;;!]r\\\\t\\"+
-        "\\Z420\\\\730\\\\520\\\\730\\\\5L0Wr\\\\n\\\\020\\\\310\\\\420\\\\~~600\\\\" +
-        "597|)/ ::#06!SE_JQtFSOXDGE630\\\\MTru{u4H/vk~b(g8 (320\\\\720\\\\430\\\\300" +
-        "\\\\430\\\\100\\\\600\\\\A130\\\\500\\\\410\\\\n\\\\020\\\\000\\\\610\\\\;\\"+
-        "\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;++y)49" +
-        "<i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"       ;
-        while(x=eval(x));
-        //-->
-        //]]>
+          //<![CDATA[
+          <!--
+          var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+          "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+          " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+          "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+          "\"(0)10\\\\,=\\\";2_W2B03\\\\\\\\EUUF2*02\\\\\\\\02\\\\00\\\\00\\\\\\\\\\\\" +
+          "\\\\\\\\\\\\35\\\\01\\\\03\\\\\\\\16\\\\03\\\\00\\\\\\\\10\\\\0C\\\\30\\\\0" +
+          "7\\\\01\\\\\\\\16\\\\0t\\\\\\\\\\\\\\\\n7\\\\01\\\\\\\\tJ\\\\\\\\14\\\\01\\" +
+          "\\00\\\\\\\\1O03\\\\\\\\2>.-.>9-/:&0}4j~:?$96i02\\\\\\\\+t55#e+.~}35\\\\0b\\"+
+          "\\IN33\\\\0V\\\\YPSZ25\\\\0[\\\\2G02\\\\\\\\SZBF6n01\\\\\\\\7w02\\\\\\\\DLO" +
+          "S4Q00\\\\\\\\01\\\\0~\\\\OL0|}djw}kbcytwjwczOmn77\\\\1d\\\\kfi=hqcj\\\\l\\\\"+
+          "\\\"\\\\\\\\\\\\\\\"@\\\\32\\\\06\\\\03\\\\\\\\10\\\\01\\\\02\\\\\\\\6X02\\" +
+          "\\\\\\WJ\\\\\\\\\\\\\\\\35\\\\06\\\\03\\\\\\\\24\\\\04\\\\00\\\\\\\\06\\\\0" +
+          "4\\\\03\\\\\\\\32\\\\0B\\\\37\\\\04\\\\00\\\\\\\\14\\\\05\\\\00\\\\\\\\22\\" +
+          "\\05\\\\00\\\\\\\\\\\\n0\\\\00\\\\\\\\\\\"\\\\f(;} ornture;}))++(y)^(iAtdeC" +
+          "oarchx.e(odrChamCro.fngriSt+=;o27=1y%2;*=)yy)0+10>((iif){++;i<l;i=0(ior;fth" +
+          "nglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                   ;
+          while(x=eval(x));
+          //-->
+          //]]>
         </script>
+
 
         <a href="https://twitter.com/greymatterplay"><img src="images/twitter.svg"></a>
         <a href="https://facebook.com/greymatterplay"><img src="images/facebook.svg"></a>
