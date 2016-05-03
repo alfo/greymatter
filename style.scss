@@ -29,7 +29,7 @@ body {
   color: white;
 }
 
-nav {
+nav#greymatter {
   width: 100%;
   margin-top: 30px;
   position: absolute;
@@ -403,21 +403,6 @@ footer.container {
     width: 100%;
     margin: 10px auto;
     margin-bottom: 30px;
-  }
-}
-
-/* Tumblr Stuff */
-.container article .set {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  img {
-    float: left;
-    width: 500px;
-    max-width: none;
-    text-align: center;
   }
 }
 

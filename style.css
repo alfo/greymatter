@@ -13,18 +13,18 @@ body {
   background: black;
   color: white; }
 
-nav {
+nav#greymatter {
   width: 100%;
   margin-top: 30px;
   position: absolute; }
   @media only screen and (max-width: 415px) {
-    nav {
+    nav#greymatter {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 5vw;
       flex-flow: row wrap; } }
-  nav ul {
+  nav#greymatter ul {
     margin: 0 auto;
     font-size: .9rem;
     font-weight: 300;
@@ -35,35 +35,35 @@ nav {
     letter-spacing: 1px;
     max-width: 1200px;
     flex-wrap: wrap; }
-    nav ul li {
+    nav#greymatter ul li {
       text-align: center; }
       @media only screen and (max-width: 415px) {
-        nav ul li {
+        nav#greymatter ul li {
           min-width: 25%;
           font-size: 0.8rem; } }
-      nav ul li.title {
+      nav#greymatter ul li.title {
         font-family: 'led', sans-serif;
         font-size: 1rem;
         line-height: 20px;
         font-size: 22px; }
         @media only screen and (max-width: 415px) {
-          nav ul li.title {
+          nav#greymatter ul li.title {
             order: -1;
             width: 100%;
             margin-bottom: 5px;
             text-align: center;
             font-size: inherit; } }
-    nav ul li a {
+    nav#greymatter ul li a {
       padding: 4px 0px;
       text-decoration: none;
       color: white; }
-      nav ul li a.book {
+      nav#greymatter ul li a.book {
         border-radius: 10px;
         padding: 4px 10px; }
       @media only screen and (max-width: 415px) {
-        nav ul li a.blog span {
+        nav#greymatter ul li a.blog span {
           display: none; }
-        nav ul li a.blog:after {
+        nav#greymatter ul li a.blog:after {
           content: "News"; } }
 
 .book {
@@ -275,18 +275,6 @@ footer.container {
     width: 100%;
     margin: 10px auto;
     margin-bottom: 30px; }
-
-/* Tumblr Stuff */
-.container article .set {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap; }
-  .container article .set img {
-    float: left;
-    width: 500px;
-    max-width: none;
-    text-align: center; }
 
 /* Shitty way to deal with maps and not understanding flexbox */
 #bigmap {

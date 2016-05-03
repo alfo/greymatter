@@ -4,22 +4,20 @@
         <script type="text/javascript">
         //<![CDATA[
         <!--
-        var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-        "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-        " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!88{)rt{y+xx=l;=+;" +
-        "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-        "\"(1)11\\\\,j\\\"t`ng)txib|[bKL30\\\\0X\\\\Q[IC05\\\\0[\\\\CCMC>w%Ffu0aai4c" +
-        "&8\\\\^\\\\\\\"!\\\\4F03\\\\\\\\33\\\\01\\\\00\\\\\\\\32\\\\05\\\\00\\\\\\\\"+
-        "OO4700\\\\\\\\10\\\\06\\\\00\\\\\\\\0M03\\\\\\\\1>++!20'\\\"\\\\\\\\\\\\.4 " +
-        ";05\\\\07\\\\\\\"\\\\\\\\\\\\I^VU7T01\\\\\\\\\\\\\\\\\\\\\\\\CEJD5D00\\\\\\" +
-        "\\6y03\\\\\\\\zGsov91)a9nan}twn/\\\\\\\\22\\\\07\\\\03\\\\\\\\25\\\\03\\\\0" +
-        "0\\\\\\\\27\\\\05\\\\03\\\\\\\\24\\\\0\\\\\\\\(\\\"}fo;n uret}r);+)y+^(i)t(" +
-        "eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y++)y11<1(iif){++;i<l;i=0(ior;fthn" +
-        "glex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                    ;
+        var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+        "=73){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+        ".substr(0,ol);}f(\")49,\\\"hbjymp,cwtk420\\\\ 06j1'54VII320\\\\H_^YZ_230\\\\"+
+        "Y\\\\\\\\Q730\\\\INB]^N^]IJ_@VDr\\\\610\\\\230\\\\ojit9E*vab/jf`;;!]r\\\\t\\"+
+        "\\Z420\\\\730\\\\520\\\\730\\\\5L0Wr\\\\n\\\\020\\\\310\\\\420\\\\~~600\\\\" +
+        "597|)/ ::#06!SE_JQtFSOXDGE630\\\\MTru{u4H/vk~b(g8 (320\\\\720\\\\430\\\\300" +
+        "\\\\430\\\\100\\\\600\\\\A130\\\\500\\\\410\\\\n\\\\020\\\\000\\\\610\\\\;\\"+
+        "\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;++y)49" +
+        "<i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"       ;
         while(x=eval(x));
         //-->
         //]]>
         </script>
+
         <a href="https://twitter.com/greymatterplay"><img src="images/twitter.svg"></a>
         <a href="https://facebook.com/greymatterplay"><img src="images/facebook.svg"></a>
         <a href="https://instagram.com/greymatterplay"><img src="images/instagram.svg"></a>
