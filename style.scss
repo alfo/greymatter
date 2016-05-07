@@ -277,6 +277,14 @@ nav#greymatter {
   }
 }
 
+iframe, .fluid-width-video-wrapper {
+  margin-bottom: 20px;
+}
+
+ul.non-list {
+  list-style: none;
+}
+
 section {
   width: 100%;
   &.bigbox {
@@ -417,6 +425,7 @@ footer.container {
   }
   #bigmap {
     display: block;
-    border-top: 3px solid #444;
+
+    iframe { border-top: 3px solid #444; }
   }
 }

@@ -44,7 +44,19 @@
 
           <h2>Trailer</h2>
           <iframe src="https://player.vimeo.com/video/164468821?color=EB7500&title=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+          <h2 id="bigmap">Find Us</h2>
           <iframe id="bigmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.0481259650846!2d-3.1951715483971097!3d55.94853778051094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c79ac3fcf597%3A0xf5778ee5337f5a2f!2sIndia+Buildings%2C+Victoria+St%2C+Edinburgh+EH1+2EX!5e0!3m2!1sen!2suk!4v1461756000325" frameborder="0" style="border:0" ></iframe>
+
+          <h2>Production Team</h2>
+          <ul class="non-list">
+            <li>Director: Andrew Broughton</li>
+            <li>Lighting Designer: <a href="http://alexforey.com">Alex Forey</a></li>
+            <li>Sound Designer: <a href="http://amos.im">Amos Jackson</a></li>
+            <li>Projection: Tom Kell</li>
+            <li>Production Manager: Dan Staniforth</li>
+          </ul>
+
         </div>
 
 
