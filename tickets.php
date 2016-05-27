@@ -1,5 +1,3 @@
 <?php
-  //header("Location: https://tickets.edfringe.com/whats-on/des-bishop-grey-matters")
+  header("Location: http://c.tickets.red61.com/performances.php?eventId=34:2149")
 ?>
-
-Tickets will be available on May 12.
