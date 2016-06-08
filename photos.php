@@ -8,7 +8,7 @@
         <div class="box">
           <h1>Images</h1>
 
-          <p>From the preview production, taken by Alex Forey:</p>
+          <p>From the preview production:</p>
 
           <img src="images/greymatter-03.jpg" class="full-width">
           <img src="images/greymatter-05.jpg" class="full-width">
