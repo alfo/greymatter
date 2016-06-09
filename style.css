@@ -16,7 +16,8 @@ body {
 nav#greymatter {
   width: 100%;
   margin-top: 30px;
-  position: absolute; }
+  position: absolute;
+  z-index: 10; }
   @media only screen and (max-width: 415px) {
     nav#greymatter {
       width: 100%;
